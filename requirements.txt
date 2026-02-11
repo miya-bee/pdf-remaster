@@ -1,0 +1,23 @@
+# PDF Remaster_v1_0_0 (Windows / Python 3.10 推奨)
+# 依存関係を“固定”して公開するための目安です。
+#
+# 注意:
+# - GPU版の PyTorch は環境(CUDA)ごとに入れ方が変わるため、torch/torchvision は別途インストール推奨。
+# - NumPy 2.x は周辺ライブラリと衝突しやすいので 1.26.4 に固定しています。
+
+numpy==1.26.4
+pillow==12.1.0
+PyMuPDF==1.26.7
+opencv-python==4.9.0.80
+
+tkinterdnd2==0.4.3
+
+# SR (Real-ESRGAN)
+realesrgan==0.3.0
+basicsr==1.4.2
+
+# OCR
+yomitoku==0.10.3
+
+# Logging / misc
+tqdm>=4.66.0

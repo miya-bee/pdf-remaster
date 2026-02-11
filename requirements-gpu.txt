@@ -1,0 +1,14 @@
+# GPU環境向けの補足 (Windows / Python 3.10 推奨)
+#
+# 1) まず CUDA に合う PyTorch を公式手順で入れてください（例）:
+#    - CUDA 11.8:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#    - CUDA 12.1:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# 2) その後、この requirements.txt を入れます:
+#    py -3.10 -m pip install -r requirements.txt
+#
+# 3) もし依存が衝突したら:
+#    - numpy は 1.26.4 に固定
+#    - torch/torchvision は “先に入れたもの” を優先（requirementsに書かない）
+
+-r requirements.txt
